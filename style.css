@@ -1,15 +1,16 @@
 * {
   box-sizing: border-box;
-  font-family: sans-serif;
 }
 
 html {
+  --white: white;
   --color-gray-100: hsl(270deg 25% 96%);
   --color-gray-300: hsl(270deg 17% 84%);
   --color-gray-500: hsl(270deg 17% 72%);
   --color-gray-700: hsl(270deg 12% 58%);
   --color-gray-900: hsl(270deg 22% 12%);
   --color-gray-1000: hsl(270deg 20% 8%);
+  font-family: sans-serif;
 }
 
 html,
@@ -29,6 +30,9 @@ body {
   background: var(--color-gray-1000);
   color: var(--color-gray-100);
   padding: 64px 32px;
+
+  font-family: 'Raleway';
+  line-height: normal;
 }
 
 footer {
@@ -46,10 +50,24 @@ footer {
 .logo {
   font-size: 2rem;
   margin-bottom: 16px;
+  color: var(--white, #FFF);
+  font-weight: 900;
+}
+
+.sublogo {
+  color: var(--gray-500, #B8ADC2);
+  font-style: italic;
+  font-weight: 500;
+}
+
+.person-name {
+  color: var(--gray-300, #D6CFDD);
+  font-weight: 700;
 }
 
 .legal {
   margin-top: auto;
+  color: var(--gray-700, #9487A1);
 }
 
 .links {
@@ -61,6 +79,8 @@ footer {
   margin-bottom: 24px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--gray-700, #9487A1);
+  font-weight: 700;
 }
 
 .links li {
@@ -73,6 +93,9 @@ footer {
 
 .links a {
   text-decoration: none;
+  color: var(--gray-100, #F5F2F7);
+  font-weight: 500;
+  line-height: 200%;
 }
 
 main {
